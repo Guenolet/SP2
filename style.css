@@ -1,0 +1,19 @@
+.wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 21.5% 21.5% 21.5% 21.5%;
+    grid-auto-rows: minmax(60px, auto)
+    grid-gap: 2em;
+}
+.un {
+    grid-column: 1;
+    background-color: #396998;
+}
+.artlab {
+    grid-column: 4;
+    background-color: lime;
+}
+.logo {grid-column: ;
+grid-row:}
+
+p {font-size: 20em;}
