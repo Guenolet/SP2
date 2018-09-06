@@ -7,12 +7,14 @@
     grid-gap: 1.5em;
     grid-auto-flow: row;
     background-color: #ffffff;
+font-family: 'Source Sans Pro', sans-serif;
 }
 .logo img {
     width: 208px;
     height: auto;
     margin-left: 5em;
 }
+/*Fromes triangulaires dans header*/
 .triangles {
     background-image: url("../img/formes-header.svg");
     grid-column: 3/ span 2;
@@ -21,28 +23,38 @@
     background-attachment: scroll;
     opacity: 1;
 }
+/*Mise en place du menu de navigation*/
 nav {
     grid-column: 3/6;
     
     justify-self: end;
-}
+margin-right: 20em;}
 .nav .menu {display: flex;
 flex-direction: row;
 justify-content: space-around;}
+
+
 
 .menu li {
     font-size: 18px;
     color: #1a2052;
     display: inline-block;
     padding: 1rem;
+font-family: 'Helvetica', sans-serif;
+
 }
+/*Image main*/
 .illus {
     grid-row: 2/3;
-margin-top: 4em;}
-.artlab {
-    grid-column: 4;
-    background-color: lime;
+    margin-top: 4em;
 }
+.illus img {height : 600px;}
+/*test de conteneur flex
+*/
+.titre {display: flex;
+flex-direction: row;}
+    
+
 h1 {
     color: #ffffff;
     text-shadow: 0 0 8px #1a2052;
@@ -60,11 +72,47 @@ h2 {
     text-align: center;
     padding-bottom: 2em;
 }
+/*Permet aux articles de la section services d'être extensible*/
+.lorem {flex:1;}
 
-.services {
+.services   {
     display: flex;
     justify-content: space-between;
     margin-right: 14.4%;
     margin-left: 14.4%;
 }
-.lorem >p:first-of-type {color: #1a2052;}
+.services .lorem >p:first-of-type {color: #1a2052;}
+
+
+.expertise  {grid-row:4/5;
+    display: flex;
+    justify-content: space-between;
+  
+background-image: url("../img/cdg-1.png");
+background-repeat: no-repeat;
+background-clip: content-box;
+    background-size: contain;} 
+
+
+/*.experts {
+grid-row:4/5
+    display: flex;
+    justify-content: space-between;
+    margin-right: 14.4%;
+    margin-left: 14.4%;
+background-image: url("../img/cdg-1.png");
+background-repeat: no-repeat;
+background-clip: content-box;
+   background-size: cover; }*/
+
+.expertise >p {color:#ffffff;}
+    
+
+.productions {background-color: #1a2052; }
+.artprod {display :flex;
+}
+.artprod .lorem >p:first-of-type {text-transform: uppercase;}
+
+.artlab {
+    grid-column: 4;
+    background-color: #ffffff;}
