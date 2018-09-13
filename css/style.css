@@ -1,0 +1,211 @@
+html {
+    font-size: 100%;
+}
+body {
+    font-size: 0.85em;
+    line-height: 100%;
+}
+.wrapper {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-rows: minmax(140px, auto);
+    grid-gap: 1.5em;
+    grid-auto-flow: row;
+    background-color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.logo img {
+    width: 208px;
+    height: auto;
+    margin-left: 5em;
+}
+
+/*Formes triangulaires dans header*/
+
+.triangles {
+    background-image: url("../img/formes-header.svg");
+    grid-column: 3/ span 2;
+    grid-row: 1/2;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    opacity: 1;
+}
+
+/*Mise en place du menu de navigation*/
+
+nav {display: flex;
+    grid-column: 3/6;
+grid-row:1/2;
+    justify-self: end;
+    margin-right: 20em;
+padding-top: 12em;
+
+}
+.nav .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.menu li {
+    font-size: 1.6em;
+    color: #1a2052;
+    display: inline-block;
+    padding: 1rem;
+    font-family: 'Helvetica', sans-serif;
+}
+
+/*Image main*/
+
+.illus {
+    grid-row: 2/3;
+    margin-top: 1em;
+}
+.illus img {
+    height: 75vh;
+    width: 100vw;
+}
+
+/*test de conteneur flex
+*/
+
+.titre {
+    position: relative;
+}
+
+/*    Positionnement du titre sur l'image main*/
+
+
+h1 {
+    color: #ffffff;
+    text-shadow: 0 0 8px #1a2052;
+     font-size: 2.8em;
+}
+.slogan p {color:#ffffff;
+font-size: 1.4rem;}
+.slogan {position: absolute;
+    top: 90%;
+    left: 30%;}
+
+h2 {
+    color: #1a2052;
+}
+.wrapper section {
+    grid-column: 1/7;
+}
+
+/*CONTENEURS DANS LES SECTIONS
+*/
+
+.flex {
+    display: flex;
+flex-direction: row;
+justify-content:space-between;
+align-items: center;
+}
+.entreprise {
+    background-color: #f5f5f5;
+}
+.entreprise >h2 {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+/*Permet aux articles de la section services d'être extensible*/
+
+.lorem {
+    flex: 1;
+}
+.services { min-height: 70vh;
+ margin-right: 10rem;
+    margin-left: 10rem;
+line-height: 1.4;}
+.services .lorem >p:first-of-type {
+    color: #1a2052;
+}
+
+
+.entreprise .plus 
+ {text-align: center;
+color:#1a2052;
+font-size: 1.4rem;}
+
+/*************SECTION EXPERTISE*********/
+.expertise {
+    grid-row: 4/5;
+min-height :85vh;
+  
+    justify-content: space-between;
+    background-image: url("../img/cdg-1.png");
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-size: cover;
+}
+
+/*Titre de la secttion EXPERTISE*/
+.expertise h2  {color:#ffffff;
+text-align: center;}
+.expertise p {text-align: center; color:#ffffff;}
+
+.expertise .domaine >p {color:#ffffff;}
+
+.experts {margin-left: 10rem ;margin-right: 10rem;
+line-height: 1.5 }
+.domaine {padding : 3em;}
+
+.expertise .plus {color:#ffffff;
+font-size: 1.4rem;}
+
+
+/***********SECTION PRODUCTIONS**********/
+
+.productions {
+    background-color: #1a2052;
+}
+.artprod {
+    display: flex;
+padding: 1em;
+margin: 0 4em;
+}
+.artprod .lorem >p {
+    color: #ffffff;
+}
+.artprod .lorem >p:first-of-type {
+    text-transform: uppercase;
+}
+.artprod .lorem { 
+padding: 2em;
+line-height: 1.4; 
+    
+}
+.artprod img {border: solid 5px #ffffff;}
+/*SECTION ACTUALITÉS*/
+
+.actusflex {display: flex; 
+}
+
+.vignette {
+    display: flex;
+justify-content: center;
+align-items:center;
+flex :1 1 0%;
+max-width: 55%;}
+.image{flex : 1 1 0%;
+ }
+#un
+#deux
+#trois
+#quatre
+.contenu {flex : 1 1 0%;}
+
+
+/********SECTION ARTLAB*****************/
+
+.artlab {
+    grid-column: 1/7;
+    background-color: #ffffff;
+max-width: 100vw}
+.artlab h2 {text-align: center;
+}
+.artnum{margin :0 15%;}
